@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/modern-normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/components/hero.css">
+    <link rel="stylesheet" href="styles/components/about.css">
+    <link rel="stylesheet" href="styles/components/featured.css">
+    <link rel="stylesheet" href="styles/components/work.css">
+    <link rel="stylesheet" href="styles/components/contact.css">
+    <link rel="stylesheet" href="styles/components/footer.css">
+    <link rel="stylesheet" href="styles/components/mobile-nav.css">
+    <link rel="stylesheet" href="styles/utils.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    
+
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__resume btn" href="index.html">Back</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!--HAMBURGER MENU-->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__btn btn" href="index.html">Back</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--END OF HAMBURGER MENU-->
+
+    <!--MAIN-->
+    <main>
+      
+
+      <section class="featured container">
+        <!-- <h3 class="featured__subtitle"></h3> -->
+
+        <div class="featured__wrapper">
+          <h2 class="featured__title">photography</h2>
+        </div>
+        <p class="featured__description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae rem quia quae error totam doloribus illum corporis labore voluptatem natus optio quas dolores, eligendi distinctio mollitia! Esse fugit impedit cum.
+        </p>
+
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">tech stack</h3>
+            <ul class="featured__tech-stack">
+                <li class="featured__info">HTML</li>
+                <li class="featured__info">CSS</li>
+                <li class="featured__info">JavaScript</li>
+                <li class="featured__info">MySQL</li>
+                <li class="featured__info">PHP</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project Type</h3>
+            <p class="featured__info">Fullstack Web Development</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Time Line</h3>
+            <p class="featured__info">September 7, 2024 - Present</p>
+          </div>
+        </div>
+
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img src="public/1.png" alt="MyFb hero">
+          </div>
+          <div class="featured__img-wrapper">
+            <img src="public/1.png" alt="MyFb courses">
+          </div>
+          <div class="featured__img-wrapper">
+            <img src="public/1.png" alt="MyFb pricing">
+          </div>
+          <div class="featured__img-wrapper">
+            <img src="public/1.png" alt="MyFb features">
+          </div>
+          <div class="featured__img-wrapper">
+            <img src="public/1.png" alt="MyFb faqs">
+          </div>
+          <div class="featured__img-wrapper">
+            <img src="public/1.png" alt="MyFb blog">
+          </div>
+          <div class="featured__img-wrapper">
+            <img src="public/1.png" alt="MyFb sign-in">
+          </div>
+          <div class="featured__img-wrapper">
+            <img src="public/1.png" alt="MyFb dashboard">
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer container section">
+      <h3 class="footer__title">END</h3>
+    </footer>
+
+
+    <script src="src/utils/mobile-nav.js"></script>
+  </body>
+</html>
