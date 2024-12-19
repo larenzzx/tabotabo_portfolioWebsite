@@ -109,6 +109,7 @@
             'content4 image4'
             'image5 content5'
             'content6 image6'
+            'image7 content7'
         ;
 
         /* grid-template-columns: repeat(2, 1fr); */
@@ -137,6 +138,10 @@
 
     .work__image6 {
         grid-area: image6;
+    }
+
+    .work__image7 {
+        grid-area: image7;
     }
 
     /* .work__content1 {
