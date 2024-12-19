@@ -1,13 +1,12 @@
 :root {
     /* --clr-dark: #050914; */
-    --clr-dark: #18181b;
-    --clr-light: #f1f5f9;
+    --clr-dark: #1a1a1a;
+    --clr-light: #ffffff;
     --clr-slate400: #94a3b8;
     --clr-slate600: #475569;
     --clr-slate800: #1e293b;
-    --clr-rose: #e11d48;
-    --clr-indigo: #4f46e5;
-    --clr-green: #16a34a;
+    /* --clr-green: #16a34a; */
+    --clr-green: #ff9900;
 
     /* rose rgb(225, 29, 72) */
     /* indigo rgb(79, 70, 229) */
@@ -67,12 +66,13 @@ button {
     color: inherit; /*to inherit the color of the parent or the body*/
 }
 
-a {
-    color: var(--clr-rose);
+i {
+    color: var(--clr-light);
 }
 
 strong {
     /* color: var(--clr-indigo); */
     color: #166534;
     color: #16a34a;
+    color: #ff9900;
 }

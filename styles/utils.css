@@ -53,7 +53,7 @@ icode ang style*/
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 14px 28px rgba(22, 163, 74, 0.5), 0 10px 10px rgba(22, 163, 74, 0.22), 0 0 120px -10px var(--clr-green); 
+    box-shadow: 0 14px 28px rgba(255, 153, 0, 0.5), 0 10px 10px rgba(255, 153, 0, 0.22), 0 0 120px -10px var(--clr-green); 
 }
 
 .container {
