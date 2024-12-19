@@ -47,7 +47,7 @@ icode ang style*/
     padding: 0.5em 1em;
     border-radius: 6px;
     /* just add 0.5 on the last to make it rgba/opacity */
-    box-shadow: 0 10px 20px rgba(22, 163, 74, 0.5), 0 6px 6px rgba(22, 163, 74, 0.5), 0 0 100px -10px var(--clr-green); 
+    /* box-shadow: 0 10px 20px rgba(22, 163, 74, 0.5), 0 6px 6px rgba(22, 163, 74, 0.5), 0 0 100px -10px var(--clr-green);  */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
