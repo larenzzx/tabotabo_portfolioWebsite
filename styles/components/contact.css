@@ -23,6 +23,26 @@
     font-size: var(--size-sm);
 }
 
+
+.mySocials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mySocials_container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--size-lg);
+
+    i {
+        color: var(--clr-green);
+    }
+}
+
 /*for responsive*/
 /* xs */
 @media (min-width: 475px) {
