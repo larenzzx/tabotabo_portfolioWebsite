@@ -1,107 +1,122 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" sizes="32x32" href="public/logoPortfolio.png">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="32x32" href="public/logoPortfolio.png">
 
-    <link rel="stylesheet" href="styles/modern-normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/components/header.css">
-    <link rel="stylesheet" href="styles/components/hero.css">
-    <link rel="stylesheet" href="styles/components/about.css">
-    <link rel="stylesheet" href="styles/components/featured.css">
-    <link rel="stylesheet" href="styles/components/work.css">
-    <link rel="stylesheet" href="styles/components/contact.css">
-    <link rel="stylesheet" href="styles/components/footer.css">
-    <link rel="stylesheet" href="styles/components/mobile-nav.css">
-    <link rel="stylesheet" href="styles/utils.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    
+  <link rel="stylesheet" href="styles/modern-normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/components/header.css">
+  <link rel="stylesheet" href="styles/components/hero.css">
+  <link rel="stylesheet" href="styles/components/about.css">
+  <link rel="stylesheet" href="styles/components/featured.css">
+  <link rel="stylesheet" href="styles/components/work.css">
+  <link rel="stylesheet" href="styles/components/contact.css">
+  <link rel="stylesheet" href="styles/components/footer.css">
+  <link rel="stylesheet" href="styles/components/mobile-nav.css">
+  <link rel="stylesheet" href="styles/utils.css">
 
-    <title>Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <!-- lightbox (for viewing image) -->
+  <!-- <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.css"> -->
+  <link rel="stylesheet" href="lightbox/css/lightbox.css">
+
+  <title>Portfolio Website</title>
 
 
 
-    <style>
-        .featured__img-container {
-            display: grid;
-            place-items: center;
-        }
+  <style>
+    .featured__img-container {
+      display: grid;
+      place-items: center;
+    }
 
-        .featured__title {
-            text-align: center;
-            width: 100%;
-        }
+    .featured__title {
+      text-align: center;
+      width: 100%;
+    }
+  </style>
 
-    </style>
-    
-  </head>
-  <body>
-    <!--HEADER-->
-    <header class="header container">
-      <nav>
-        <ul class="header__menu">
-          <li>
-            <a class="header__resume btn" href="index.html">Back</a>
-          </li>
-        </ul>
-        <button class="header__bars">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
-          </svg>
-        </button>
-      </nav>
-    </header>
+</head>
 
-    <!--HAMBURGER MENU-->
-    <div class="mobile-nav">
-      <nav>
-        <ul class="mobile-nav__menu">
-          <li>
-            <a class="mobile-nav__btn btn" href="index.html">Back</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!--END OF HAMBURGER MENU-->
+<body>
+  <!--HEADER-->
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__resume btn" href="index.html">Back</a>
+        </li>
+      </ul>
+      <button class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </nav>
+  </header>
 
-    <!--MAIN-->
-    <main>
-      
+  <!--HAMBURGER MENU-->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__btn btn" href="index.html">Back</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!--END OF HAMBURGER MENU-->
 
-      <section class="featured container">
-        <!-- <h3 class="featured__subtitle"></h3> -->
+  <!--MAIN-->
+  <main>
 
-        <div class="featured__wrapper">
-          <h2 class="featured__title">visual branding</h2>
-        </div>
-        <!-- <p class="featured__description">
+
+    <section class="featured container">
+      <!-- <h3 class="featured__subtitle"></h3> -->
+
+      <div class="featured__wrapper">
+        <h2 class="featured__title">visual branding</h2>
+      </div>
+      <!-- <p class="featured__description">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae rem quia quae error totam doloribus illum corporis labore voluptatem natus optio quas dolores, eligendi distinctio mollitia! Esse fugit impedit cum.
         </p> -->
 
-        
 
-        <div class="featured__img-container">
-          <div class="featured__img-wrapper">
+
+      <div class="featured__img-container">
+        <div class="featured__img-wrapper">
+          <a href="public/visual1.png" data-lightbox="visual">
             <img src="public/visual1.png" alt="">
-          </div>
-          <div class="featured__img-wrapper">
-            <img src="public/visual2.png" alt="">
-          </div>
+          </a>
         </div>
-      </section>
+        <div class="featured__img-wrapper">
+          <a href="public/visual2.png" data-lightbox="visual">
+            <img src="public/visual2.png" alt="">
+          </a>   
+        </div>
+      </div>
+    </section>
 
-    </main>
+  </main>
 
-    <footer class="footer container section">
-      <h3 class="footer__title">END</h3>
-    </footer>
+  <footer class="footer container section">
+    <h3 class="footer__title">END</h3>
+  </footer>
 
 
-    <script src="src/utils/mobile-nav.js"></script>
-  </body>
+  <script src="src/utils/mobile-nav.js"></script>
+
+  <!-- lightbox (for viewing image) -->
+  <!-- <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script> -->
+  <script src="lightbox/js/lightbox-plus-jquery.js"></script>
+</body>
+
 </html>

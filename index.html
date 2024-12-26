@@ -1,131 +1,150 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" sizes="32x32" href="public/logoPortfolio.png">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="32x32" href="public/logoPortfolio.png">
 
-    <link rel="stylesheet" href="styles/modern-normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/components/header.css">
-    <link rel="stylesheet" href="styles/components/hero.css">
-    <link rel="stylesheet" href="styles/components/about.css">
-    <link rel="stylesheet" href="styles/components/featured.css">
-    <link rel="stylesheet" href="styles/components/work.css">
-    <link rel="stylesheet" href="styles/components/contact.css">
-    <link rel="stylesheet" href="styles/components/footer.css">
-    <link rel="stylesheet" href="styles/components/mobile-nav.css">
-    <link rel="stylesheet" href="styles/utils.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="styles/modern-normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/components/header.css">
+  <link rel="stylesheet" href="styles/components/hero.css">
+  <link rel="stylesheet" href="styles/components/about.css">
+  <link rel="stylesheet" href="styles/components/featured.css">
+  <link rel="stylesheet" href="styles/components/work.css">
+  <link rel="stylesheet" href="styles/components/contact.css">
+  <link rel="stylesheet" href="styles/components/footer.css">
+  <link rel="stylesheet" href="styles/components/mobile-nav.css">
+  <link rel="stylesheet" href="styles/utils.css">
 
-    <!-- AOS Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-    <title>Portfolio Website</title>
-  </head>
-  <body>
-    <!--HEADER-->
-    <header class="header container">
-      <nav>
-        <ul class="header__menu">
-          <li>
-            <a class="header__link" href="#featured">My Projects</a>
-          </li>
-          <li>
-            <a class="header__link" href="#contact">Contact</a>
-          </li>
-          <!-- <li class="header__line"></li> -->
-          <li>
-            <a class="header__resume btn" href="#about">About</a>
-          </li>
-        </ul>
-        <button class="header__bars">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
-          </svg>
-        </button>
-      </nav>
-    </header>
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!--HAMBURGER MENU-->
-    <div class="mobile-nav">
-      <nav>
-        <ul class="mobile-nav__menu">
-          <li>
-            <a href="#about" class="mobile-nav__link">About</a>
-          </li>
-          <li>
-            <a href="#featured" class="mobile-nav__link">My Projects</a>
-          </li>
-          <li>
-            <a href="#contact" class="mobile-nav__link">Contact</a>
-          </li>
-          <!-- <li class="mobile-nav__link-line"></li> -->
-          <!-- <li>
+  <!-- lightbox (for viewing image) -->
+  <!-- <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.css"> -->
+  <link rel="stylesheet" href="lightbox/css/lightbox.css">
+
+  <title>Portfolio Website</title>
+</head>
+
+<body>
+  <!--HEADER-->
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#featured">My Projects</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contact">Contact</a>
+        </li>
+        <!-- <li class="header__line"></li> -->
+        <li>
+          <a class="header__resume btn" href="#about">About</a>
+        </li>
+      </ul>
+      <button class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!--HAMBURGER MENU-->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a href="#about" class="mobile-nav__link">About</a>
+        </li>
+        <li>
+          <a href="#featured" class="mobile-nav__link">My Projects</a>
+        </li>
+        <li>
+          <a href="#contact" class="mobile-nav__link">Contact</a>
+        </li>
+        <!-- <li class="mobile-nav__link-line"></li> -->
+        <!-- <li>
             <a class="mobile-nav__btn btn" href="#about">About</a>
           </li> -->
-        </ul>
-      </nav>
-    </div>
-    <!--END OF HAMBURGER MENU-->
+      </ul>
+    </nav>
+  </div>
+  <!--END OF HAMBURGER MENU-->
 
-    <!--MAIN-->
-    <main>
-      <section class="hero container" data-aos="zoom-in">
-        <!-- <img class="hero__img" src="public/TABOTABO, MARK LARENZ B OTH_5025.jpg" alt="profile picture">  -->
-        <br><br>
-        <h1 class="hero__title">PORTFOLIO  WEBSITE</h1>
-        <h2 class="hero__subtitle">An IT Elective Website Portfolio </h2>
-        <p class="hero__description"><i> Western Mindanao State University</i> <br> <strong> Bachelor of Science in Information Technology </strong>  </p>
-        <a class="hero__btn btn" href="#featured">Projects</a>
-      </section>
+  <!--MAIN-->
+  <main>
+    <section class="hero container" data-aos="zoom-in">
+      <!-- <img class="hero__img" src="public/TABOTABO, MARK LARENZ B OTH_5025.jpg" alt="profile picture">  -->
+      <br><br>
+      <h1 class="hero__title">PORTFOLIO WEBSITE</h1>
+      <h2 class="hero__subtitle">An IT Elective Website Portfolio </h2>
+      <p class="hero__description"><i> Western Mindanao State University</i> <br> <strong> Bachelor of Science in
+          Information Technology </strong> </p>
+      <a class="hero__btn btn" href="#featured">Projects</a>
+    </section>
 
-      <br><br><br>
+    <br><br><br>
 
-      <section id="about" class="about container section">
-      
-        <div class="about__content" data-aos="zoom-in">
-          
-          <div class="featured__wrapper">
-            <h2 class="about__title">About</h2>
-            <a class="featured__link" href="https://www.facebook.com/marklarenz.tabotabo/">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
-              </svg>
-            </a>
-          </div>
-          
-          <p class="about__description">Hello! I am <strong>Mark Larenz Tabotabo</strong> a dedicated 4th-year Bachelor of Science in Information Technology student at <i>Western Mindanao State University</i>. Beyond academics, I am an arnis student-athlete, embodying discipline, perseverance, and teamwork—values that I carry into every aspect of my life.</p>
-          <p class="about__description">Currently, my passion lies in frontend development, where I strive to create intuitive and visually engaging user interfaces. I am consistently working on refining my technical skills, exploring new frameworks, and staying updated with the latest trends in web development.</p>
-          <p class="about__description">My ultimate goal is to become a <strong>software engineer</strong>, contributing to innovative projects that make a meaningful impact. With a blend of technical expertise and a competitive mindset honed through sports, I am eager to tackle challenges and grow both personally and professionally.</p>
-          <hr class="about__hr" />
-          <h3 class="about__subtitle">Skills</h3>
-          <!--a container to arange the display of the list-->
-          <div class="about__ul-container">
-            <ul class="about__ul">
-              <li class="about__list">Web Development</li>
-              <li class="about__list">HTML</li>
-              <li class="about__list">CSS</li>
-            </ul>
-            <ul class="about__ul">
-              <li class="about__list">JavaScript</li>
-              <li class="about__list">PHP</li>
-              <li class="about__list">MySQL</li>
-            </ul>
-          </div>
+    <section id="about" class="about container section">
+
+      <div class="about__content" data-aos="zoom-in">
+
+        <div class="featured__wrapper">
+          <h2 class="about__title">About</h2>
+          <a class="featured__link" href="https://www.facebook.com/marklarenz.tabotabo/">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+            </svg>
+          </a>
         </div>
 
-        <div class="about__img-wrapper">
+        <p class="about__description">Hello! I am <strong>Mark Larenz Tabotabo</strong> a dedicated 4th-year Bachelor of
+          Science in Information Technology student at <i>Western Mindanao State University</i>. Beyond academics, I am
+          an arnis student-athlete, embodying discipline, perseverance, and teamwork—values that I carry into every
+          aspect of my life.</p>
+        <p class="about__description">Currently, my passion lies in frontend development, where I strive to create
+          intuitive and visually engaging user interfaces. I am consistently working on refining my technical skills,
+          exploring new frameworks, and staying updated with the latest trends in web development.</p>
+        <p class="about__description">My ultimate goal is to become a <strong>software engineer</strong>, contributing
+          to innovative projects that make a meaningful impact. With a blend of technical expertise and a competitive
+          mindset honed through sports, I am eager to tackle challenges and grow both personally and professionally.</p>
+        <hr class="about__hr" />
+        <h3 class="about__subtitle">Skills</h3>
+        <!--a container to arange the display of the list-->
+        <div class="about__ul-container">
+          <ul class="about__ul">
+            <li class="about__list">Web Development</li>
+            <li class="about__list">HTML</li>
+            <li class="about__list">CSS</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">JavaScript</li>
+            <li class="about__list">PHP</li>
+            <li class="about__list">MySQL</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about__img-wrapper">
+        <a href="public/IMG_5019.JPG" data-lightbox="My Profile Picture" date-title="My Picture">
           <img class="about__img" src="public/IMG_5019.JPG" alt="profile pic" />
-        </div>
-      </section>
+        </a>
+      </div>
+    </section>
 
-      <!-- <section class="featured container section">
+    <!-- <section class="featured container section">
         <h3 class="featured__subtitle">Featured Project</h3>
 
         <div class="featured__wrapper">
@@ -190,139 +209,168 @@
       </section> -->
 
 
-      <section id="featured" class="work container section">
-        <h2 class="work__title">Projects</h2>
-        <p class="work__description">
-          This project showcases all the lab activities completed in IT 145 Elective, highlighting practical applications of key concepts and skills learned throughout the course.
-        </p>
-        <!-- =====MY PROJECTS HERE-->
-        <div class="work__container">
-          <!--Project 1-->
-          <h3 class="work__project-title">PHOTOGRAPHY</h3>
-          <div class="work__img-wrapper work__image1" data-aos="fade-right">
+    <section id="featured" class="work container section">
+      <h2 class="work__title">Projects</h2>
+      <p class="work__description">
+        This project showcases all the lab activities completed in IT 145 Elective, highlighting practical applications
+        of key concepts and skills learned throughout the course.
+      </p>
+      <!-- =====MY PROJECTS HERE-->
+      <div class="work__container">
+        <!--Project 1-->
+        <h3 class="work__project-title">PHOTOGRAPHY</h3>
+        <div class="work__img-wrapper work__image1" data-aos="fade-right">
+          <a href="public/photographyHome.png" data-lightbox="photography">
             <img src="public/photographyHome.png" alt="first project">
-          </div>
-          <div class="work__project work__content1">
-            <h3 class="work__project-subtitle">PHOTOGRAPHY</h3>
-            <p class="work__project-description1">
-              This project explores essential photography techniques, enhancing both creativity and composition skills. It covers the Rule of Thirds, Breathing Space, Golden Triangle, Rule of Odds, Simplification, Framing, Viewpoint, and Action.
-            </p>
-            <p class="work__project-description2">
-              Each technique provides a foundation for capturing visually compelling and well-balanced photographs, emphasizing the art of storytelling through imagery.
-            </p>
-            <a href="photography.html" class="btn work__project-btn">View</a>
-          </div>
-  
-          <!--Project 2-->
-          <h3 class="work__project-title">GRAPHIC DESIGN</h3>
-          <div class="work__img-wrapper work__image2" data-aos="fade-left">
-            <img src="public/Graphicdesign.png" alt="2nd project">
-          </div>
-          <div class="work__project work__content2">
-            <h3 class="work__project-subtitle">GRAPHIC DESIGN</h3>
-            <p class="work__project-description1">
-              This project focuses on the fundamentals of graphic design, emphasizing photo enhancement techniques using Adobe Photoshop. 
-            </p>
-            <p class="work__project-description2">
-              Through hands-on activities, we learned to manipulate images, adjust colors, apply effects, and enhance visual appeal, fostering creativity and technical proficiency in digital design.
-            </p>
-            <!-- <a href="https://drive.google.com/file/d/18AwAcjfyB8ldqjdN0eVQeNi_GTyd2KWX/view?usp=sharing" class="btn work__project-btn">View</a> -->
-          </div>
-  
-          <!--Project 3-->
-          <h3 class="work__project-title">LAYOUT DESIGN</h3>
-          <div class="work__img-wrapper work__image3" data-aos="fade-right">
-            <img src="public/wmsuPoster.png" alt="3rd project">
-          </div>
-          <div class="work__project work__content3">
-            <h3 class="work__project-subtitle">LAYOUT DESIGN</h3>
-            <p class="work__project-description1">
-              This project delves into the art of layout design, teaching us how to create professional-quality posters and brochures. 
-            </p>
-            <p class="work__project-description2">
-              By focusing on visual hierarchy, typography, and color theory, we learned to design layouts that are both visually appealing and effectively communicate key messages.
-            </p>
-            <a href="layout.html" class="btn work__project-btn">View</a>
-          </div>
-  
-          <!--Project 4-->
-          <h3 class="work__project-title">LOGO DESIGN</h3>
-          <div class="work__img-wrapper work__image4" data-aos="fade-left">
-            <img src="public/4.svg" alt="4th project">
-          </div>
-          <div class="work__project work__content4">
-            <h3 class="work__project-subtitle">LOGO DESIGN</h3>
-            <p class="work__project-description1">
-              This project centers on the fundamentals of logo design, teaching us how to create meaningful and memorable logos. 
-            </p>
-            <p class="work__project-description2">
-              We explored design principles, typography, and symbolism to craft logos that effectively represent brand identity while ensuring scalability and versatility.
-            </p>
-            <!-- <a href="#" class="btn work__project-btn">View</a> -->
-          </div>
-  
-          <!--Project 5-->
-          <h3 class="work__project-title">VISUAL BRANDING</h3>
-          <div class="work__img-wrapper work__image5" data-aos="fade-right">
-            <img src="public/1.svg" alt="5th project">
-          </div>
-          <div class="work__project work__content5">
-            <h3 class="work__project-subtitle">VISUAL BRANDING</h3>
-            <p class="work__project-description1">
-              This project focuses on the principles of visual branding, guiding us in creating cohesive and impactful brand identities. 
-            </p>
-            <p class="work__project-description2">
-              We learned how to design visual elements such as color palettes, typography, and logo applications that align with a brand’s values and resonate with its target audience.
-            </p>
-            <a href="visualBranding.html" class="btn work__project-btn">View</a>
-          </div>
-  
-          <!--Project 6-->
-          <h3 class="work__project-title">MERCH/PACKAGING DESIGN</h3>
-          <div class="work__img-wrapper work__image6" data-aos="fade-left">
-            <img src="public/3.svg" alt="6th project">
-          </div>
-          <div class="work__project work__content6">
-            <h3 class="work__project-subtitle">MERCH/PACKAGING DESIGN</h3>
-            <p class="work__project-description1">
-              This project highlights the creative process of designing merchandise and packaging. 
-            </p>
-            <p class="work__project-description2">
-              We explored how to combine aesthetics and functionality to create designs that are visually appealing, practical, and aligned with brand identity. The focus was on delivering a complete customer experience through thoughtful design.
-            </p>
-            <!-- <a href="#" class="btn work__project-btn">View</a> -->
-          </div>
-
-
-          <!--Project 7-->
-          <h3 class="work__project-title">WEBSITE/SOCIAL MEDIA DESIGN</h3>
-          <div class="work__img-wrapper work__image7" data-aos="fade-right">
-            <img src="public/2.svg" alt="6th project">
-          </div>
-          <div class="work__project work__content7">
-            <h3 class="work__project-subtitle">WEBSITE/SOCIAL MEDIA DESIGN</h3>
-            <p class="work__project-description1">
-              This project emphasizes designing engaging and user-friendly websites and social media content.
-            </p>
-            <p class="work__project-description2">
-              We learned how to create visually cohesive layouts, integrate branding elements, and optimize designs for online platforms to enhance digital presence and user interaction.
-            </p>
-            <!-- <a href="#" class="btn work__project-btn">View</a> -->
-          </div>
-
+          </a>
         </div>
-      </section>
+        <div class="work__project work__content1">
+          <h3 class="work__project-subtitle">PHOTOGRAPHY</h3>
+          <p class="work__project-description1">
+            This project explores essential photography techniques, enhancing both creativity and composition skills. It
+            covers the Rule of Thirds, Breathing Space, Golden Triangle, Rule of Odds, Simplification, Framing,
+            Viewpoint, and Action.
+          </p>
+          <p class="work__project-description2">
+            Each technique provides a foundation for capturing visually compelling and well-balanced photographs,
+            emphasizing the art of storytelling through imagery.
+          </p>
+          <a href="photography.html" class="btn work__project-btn">View</a>
+        </div>
+
+        <!--Project 2-->
+        <h3 class="work__project-title">GRAPHIC DESIGN</h3>
+        <div class="work__img-wrapper work__image2" data-aos="fade-left">
+          <a href="public/Graphicdesign.png" data-lightbox="graphicdesign">
+            <img src="public/Graphicdesign.png" alt="2nd project">
+          </a>
+        </div>
+        <div class="work__project work__content2">
+          <h3 class="work__project-subtitle">GRAPHIC DESIGN</h3>
+          <p class="work__project-description1">
+            This project focuses on the fundamentals of graphic design, emphasizing photo enhancement techniques using
+            Adobe Photoshop.
+          </p>
+          <p class="work__project-description2">
+            Through hands-on activities, we learned to manipulate images, adjust colors, apply effects, and enhance
+            visual appeal, fostering creativity and technical proficiency in digital design.
+          </p>
+          <!-- <a href="https://drive.google.com/file/d/18AwAcjfyB8ldqjdN0eVQeNi_GTyd2KWX/view?usp=sharing" class="btn work__project-btn">View</a> -->
+        </div>
+
+        <!--Project 3-->
+        <h3 class="work__project-title">LAYOUT DESIGN</h3>
+        <div class="work__img-wrapper work__image3" data-aos="fade-right">
+          <a href="public/wmsuPoster.png" data-lightbox="wmsuPoster">
+            <img src="public/wmsuPoster.png" alt="3rd project">
+          </a>
+        </div>
+        <div class="work__project work__content3">
+          <h3 class="work__project-subtitle">LAYOUT DESIGN</h3>
+          <p class="work__project-description1">
+            This project delves into the art of layout design, teaching us how to create professional-quality posters
+            and brochures.
+          </p>
+          <p class="work__project-description2">
+            By focusing on visual hierarchy, typography, and color theory, we learned to design layouts that are both
+            visually appealing and effectively communicate key messages.
+          </p>
+          <a href="layout.html" class="btn work__project-btn">View</a>
+        </div>
+
+        <!--Project 4-->
+        <h3 class="work__project-title">LOGO DESIGN</h3>
+        <div class="work__img-wrapper work__image4" data-aos="fade-left">
+          <a href="public/4.svg" data-lightbox="project4">
+            <img src="public/4.svg" alt="4th project">
+          </a>
+        </div>
+        <div class="work__project work__content4">
+          <h3 class="work__project-subtitle">LOGO DESIGN</h3>
+          <p class="work__project-description1">
+            This project centers on the fundamentals of logo design, teaching us how to create meaningful and memorable
+            logos.
+          </p>
+          <p class="work__project-description2">
+            We explored design principles, typography, and symbolism to craft logos that effectively represent brand
+            identity while ensuring scalability and versatility.
+          </p>
+          <!-- <a href="#" class="btn work__project-btn">View</a> -->
+        </div>
+
+        <!--Project 5-->
+        <h3 class="work__project-title">VISUAL BRANDING</h3>
+        <div class="work__img-wrapper work__image5" data-aos="fade-right">
+          <a href="public/1.svg" data-lightbox="project5">
+            <img src="public/1.svg" alt="5th project">
+          </a>
+        </div>
+        <div class="work__project work__content5">
+          <h3 class="work__project-subtitle">VISUAL BRANDING</h3>
+          <p class="work__project-description1">
+            This project focuses on the principles of visual branding, guiding us in creating cohesive and impactful
+            brand identities.
+          </p>
+          <p class="work__project-description2">
+            We learned how to design visual elements such as color palettes, typography, and logo applications that
+            align with a brand’s values and resonate with its target audience.
+          </p>
+          <a href="visualBranding.html" class="btn work__project-btn">View</a>
+        </div>
+
+        <!--Project 6-->
+        <h3 class="work__project-title">MERCH/PACKAGING DESIGN</h3>
+        <div class="work__img-wrapper work__image6" data-aos="fade-left">
+          <a href="public/3.svg" data-lightbox="project6">
+            <img src="public/3.svg" alt="6th project">
+          </a>
+        </div>
+        <div class="work__project work__content6">
+          <h3 class="work__project-subtitle">MERCH/PACKAGING DESIGN</h3>
+          <p class="work__project-description1">
+            This project highlights the creative process of designing merchandise and packaging.
+          </p>
+          <p class="work__project-description2">
+            We explored how to combine aesthetics and functionality to create designs that are visually appealing,
+            practical, and aligned with brand identity. The focus was on delivering a complete customer experience
+            through thoughtful design.
+          </p>
+          <!-- <a href="#" class="btn work__project-btn">View</a> -->
+        </div>
 
 
-      <section id="contact" class="contact container section" data-aos="zoom-in">
-        <h2 class="contact__title">get in contact</h1>
+        <!--Project 7-->
+        <h3 class="work__project-title">WEBSITE/SOCIAL MEDIA DESIGN</h3>
+        <div class="work__img-wrapper work__image7" data-aos="fade-right">
+          <a href="public/2.svg" data-lightbox="project7">
+            <img src="public/2.svg" alt="7th project">
+          </a>
+        </div>
+        <div class="work__project work__content7">
+          <h3 class="work__project-subtitle">WEBSITE/SOCIAL MEDIA DESIGN</h3>
+          <p class="work__project-description1">
+            This project emphasizes designing engaging and user-friendly websites and social media content.
+          </p>
+          <p class="work__project-description2">
+            We learned how to create visually cohesive layouts, integrate branding elements, and optimize designs for
+            online platforms to enhance digital presence and user interaction.
+          </p>
+          <!-- <a href="#" class="btn work__project-btn">View</a> -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="contact" class="contact container section" data-aos="zoom-in">
+      <h2 class="contact__title">get in contact</h1>
 
         <div class="mySocials">
           <div class="mySocials_container">
             <i class="fa-brands fa-facebook"></i>
             <p class="mySocials__info">Mark Larenz</p>
           </div>
-          
+
           <div class="mySocials_container">
             <i class="fa-brands fa-instagram"></i>
             <p class="mySocials__info">larenzzzx</p>
@@ -337,21 +385,27 @@
 
         <p class="contact__description">You can also email me by clicking the button below.</p>
         <a href="mailto:larenztabotabo@gmail.com" target="_blank" class="contact__btn btn">Reach Out</a>
-      </section>
-    </main>
+    </section>
+  </main>
 
-    <footer class="footer container section">
-      <h3 class="footer__title">All rights reserved 2024</h3>
-    </footer>
+  <footer class="footer container section">
+    <h3 class="footer__title">All rights reserved 2024</h3>
+  </footer>
 
 
-    <script src="src/utils/mobile-nav.js"></script>
+  <script src="src/utils/mobile-nav.js"></script>
 
-    
-    <!-- AOS Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+  <!-- lightbox (for viewing image) -->
+  <!-- <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script> -->
+  <script src="lightbox/js/lightbox-plus-jquery.js"></script>
+</body>
+
 </html>
