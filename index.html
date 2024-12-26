@@ -19,7 +19,11 @@
     <link rel="stylesheet" href="styles/components/mobile-nav.css">
     <link rel="stylesheet" href="styles/utils.css">
 
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 
     <title>Portfolio Website</title>
@@ -72,12 +76,11 @@
 
     <!--MAIN-->
     <main>
-      <section class="hero container">
+      <section class="hero container" data-aos="zoom-in">
         <!-- <img class="hero__img" src="public/TABOTABO, MARK LARENZ B OTH_5025.jpg" alt="profile picture">  -->
         <br><br>
         <h1 class="hero__title">PORTFOLIO  WEBSITE</h1>
         <h2 class="hero__subtitle">An IT Elective Website Portfolio </h2>
-        <!-- <p class="hero__description">A passionate <strong> Frontend / Fullstack Web developer </strong> and practicing to be a <a> UI/UX designer </a> </p> -->
         <p class="hero__description"><i> Western Mindanao State University</i> <br> <strong> Bachelor of Science in Information Technology </strong>  </p>
         <a class="hero__btn btn" href="#featured">Projects</a>
       </section>
@@ -86,7 +89,7 @@
 
       <section id="about" class="about container section">
       
-        <div class="about__content">
+        <div class="about__content" data-aos="zoom-in">
           
           <div class="featured__wrapper">
             <h2 class="about__title">About</h2>
@@ -196,7 +199,7 @@
         <div class="work__container">
           <!--Project 1-->
           <h3 class="work__project-title">PHOTOGRAPHY</h3>
-          <div class="work__img-wrapper work__image1">
+          <div class="work__img-wrapper work__image1" data-aos="fade-right">
             <img src="public/photographyHome.png" alt="first project">
           </div>
           <div class="work__project work__content1">
@@ -212,7 +215,7 @@
   
           <!--Project 2-->
           <h3 class="work__project-title">GRAPHIC DESIGN</h3>
-          <div class="work__img-wrapper work__image2">
+          <div class="work__img-wrapper work__image2" data-aos="fade-left">
             <img src="public/Graphicdesign.png" alt="2nd project">
           </div>
           <div class="work__project work__content2">
@@ -228,7 +231,7 @@
   
           <!--Project 3-->
           <h3 class="work__project-title">LAYOUT DESIGN</h3>
-          <div class="work__img-wrapper work__image3">
+          <div class="work__img-wrapper work__image3" data-aos="fade-right">
             <img src="public/wmsuPoster.png" alt="3rd project">
           </div>
           <div class="work__project work__content3">
@@ -244,7 +247,7 @@
   
           <!--Project 4-->
           <h3 class="work__project-title">LOGO DESIGN</h3>
-          <div class="work__img-wrapper work__image4">
+          <div class="work__img-wrapper work__image4" data-aos="fade-left">
             <img src="public/4.svg" alt="4th project">
           </div>
           <div class="work__project work__content4">
@@ -260,7 +263,7 @@
   
           <!--Project 5-->
           <h3 class="work__project-title">VISUAL BRANDING</h3>
-          <div class="work__img-wrapper work__image5">
+          <div class="work__img-wrapper work__image5" data-aos="fade-right">
             <img src="public/1.svg" alt="5th project">
           </div>
           <div class="work__project work__content5">
@@ -276,7 +279,7 @@
   
           <!--Project 6-->
           <h3 class="work__project-title">MERCH/PACKAGING DESIGN</h3>
-          <div class="work__img-wrapper work__image6">
+          <div class="work__img-wrapper work__image6" data-aos="fade-left">
             <img src="public/3.svg" alt="6th project">
           </div>
           <div class="work__project work__content6">
@@ -293,7 +296,7 @@
 
           <!--Project 7-->
           <h3 class="work__project-title">WEBSITE/SOCIAL MEDIA DESIGN</h3>
-          <div class="work__img-wrapper work__image7">
+          <div class="work__img-wrapper work__image7" data-aos="fade-right">
             <img src="public/2.svg" alt="6th project">
           </div>
           <div class="work__project work__content7">
@@ -311,7 +314,7 @@
       </section>
 
 
-      <section id="contact" class="contact container section">
+      <section id="contact" class="contact container section" data-aos="zoom-in">
         <h2 class="contact__title">get in contact</h1>
 
         <div class="mySocials">
@@ -343,5 +346,12 @@
 
 
     <script src="src/utils/mobile-nav.js"></script>
+
+    
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
